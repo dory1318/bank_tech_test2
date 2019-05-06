@@ -12,6 +12,7 @@ class TestAccount(unittest.TestCase):
         bank = Account()
         deposit = Deposit(100)
         bank.deposit_money(deposit.amount)
+        balance = bank.current_balance
         self.assertEqual (balance, 100)
 
 if __name__ == '__main__':

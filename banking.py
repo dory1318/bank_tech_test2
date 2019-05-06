@@ -4,6 +4,9 @@ class Account():
     def __init__(self):
         self.current_balance = 0
 
+    def deposit_money(self, amount):
+        self.current_balance += amount
+
 class Deposit():
     def __init__(self, amount):
         self.amount = amount
