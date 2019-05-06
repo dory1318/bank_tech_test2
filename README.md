@@ -6,9 +6,13 @@ based on the following requirements https://github.com/makersacademy/course/blob
 git clone https://github.com/dory1318/bank_tech_test2.git
 ``
 ### to install dependencies:
-``
-``
-### to run the test:
-``
+``pip3 install pytest``
 
-``
+``pip3 install behave``
+### to run the test:
+``behave``
+
+``pytest``
+
+### to run from command line:
+``python3 banking.py``
