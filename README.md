@@ -8,9 +8,8 @@ git clone https://github.com/dory1318/bank_tech_test2.git
 ### to install dependencies:
 ``pip3 install pytest``
 
-``pip3 install behave``
 ### to run the test:
-``behave``
+``python3 test_banking.py``
 
 ``pytest``
 
