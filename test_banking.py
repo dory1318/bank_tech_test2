@@ -15,5 +15,12 @@ class TestAccount(unittest.TestCase):
         balance = bank.current_balance
         self.assertEqual (balance, 100)
 
+    def test_withdraw_money(self):
+        bank = Account()
+        withdraw = Withdraw(50)
+        bank.withdraw_money(withdraw.amount)
+        balance = bank.current_balance
+        self.assertEqual (balance, 50)
+
 if __name__ == '__main__':
     unittest.main()
