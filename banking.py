@@ -19,6 +19,12 @@ class Account():
     def puts_withdraw_into_transaction_history(self, withdraw):
         self.transaction_history.append([f"{withdraw.date}, {withdraw.amount}, 0, {self.current_balance}"])
 
+    def show_transaction_history(self):
+        # print('\n'.join(' '.split(sub) for sub in self.transaction_history))
+        for i in self.transaction_history:
+            print(",".join(i))
+
+
 class Deposit():
     def __init__(self, amount, date):
         self.amount = amount
@@ -33,3 +39,14 @@ class Withdraw():
 class CurrentTime():
     def __init__(self):
         self.date = datetime.now().strftime("%d/%m/%Y")
+
+
+date = CurrentTime()
+account = Account()
+deposit = Deposit(1000, date.date)
+deposit2 = Deposit(2000, date.date)
+withdraw = Withdraw(400, date.date)
+account.deposit_money(deposit.amount, deposit)
+account.deposit_money(deposit2.amount, deposit2)
+account.withdraw_money(withdraw.amount, withdraw)
+account.show_transaction_history()
