@@ -11,12 +11,16 @@ class Account():
         self.current_balance -= amount
 
 class Deposit():
-    def __init__(self, amount):
+    def __init__(self, amount, date):
         self.amount = amount
         self.date = datetime.now().strftime("%d/%m/%Y")
 
 
 class Withdraw():
-    def __init__(self, amount):
+    def __init__(self, amount, date):
         self.amount = amount
+        self.date = datetime.now().strftime("%d/%m/%Y")
+
+class CurrentTime():
+    def __init__(self):
         self.date = datetime.now().strftime("%d/%m/%Y")
