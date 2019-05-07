@@ -17,6 +17,8 @@ class TestAccount(unittest.TestCase):
 
     def test_withdraw_money(self):
         bank = Account()
+        deposit = Deposit(100)
+        bank.deposit_money(deposit.amount)
         withdraw = Withdraw(50)
         bank.withdraw_money(withdraw.amount)
         balance = bank.current_balance

@@ -7,6 +7,9 @@ class Account():
     def deposit_money(self, amount):
         self.current_balance += amount
 
+    def withdraw_money(self, amount):
+        self.current_balance -= amount
+
 class Deposit():
     def __init__(self, amount):
         self.amount = amount
