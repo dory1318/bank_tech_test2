@@ -3,6 +3,7 @@ from datetime import datetime
 class Account():
     def __init__(self):
         self.current_balance = 0
+        self.transaction_history = [['date, withdraw, deposit, balance']]
 
     def deposit_money(self, amount):
         self.current_balance += amount
