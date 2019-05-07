@@ -20,9 +20,8 @@ class Account():
         self.transaction_history.append([f"{withdraw.date}, {withdraw.amount}, 0, {self.current_balance}"])
 
     def show_transaction_history(self):
-        # print('\n'.join(' '.split(sub) for sub in self.transaction_history))
         for i in self.transaction_history:
-            print(",".join(i))
+            print(",".join(i).replace(",", " || "))
 
 
 class Deposit():
