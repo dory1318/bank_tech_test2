@@ -15,3 +15,5 @@ git clone https://github.com/dory1318/bank_tech_test2.git
 
 ### to run from command line:
 ``python3 banking.py``
+
+<img width="446" alt="Screenshot 2019-05-07 at 16 02 31" src="https://user-images.githubusercontent.com/45072719/57305561-91f1b480-70e1-11e9-9cb3-03470826fed5.png">
